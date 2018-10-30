@@ -22,9 +22,9 @@
 
 <body>
     <div class="container" ng-controller="missing">
-        <div class="row main border border-info" ng-repeat="tweet in tweets">
+        <div class="row main border border-light" ng-repeat="tweet in tweets">
             <div class="col-sm"><a href="https://twitter.com/statuses/{{tweet.TweetId}}" target="_blank">{{tweet.TweetText}}</a></div>
-            <div class="col-sm"><a href="{{tweet.LinkInTweet}}" target="_blank">Link</a></div>
+            <div class="col-sm"><a href="{{tweet.LinkInTweet}}" target="_blank">Source</a></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md">
