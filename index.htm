@@ -17,9 +17,9 @@
 
 <body>
     <div class="container" ng-controller="missing">
-        <div class="row" ng-repeat="person in peoples">
-            <div class="col-sm-3">{{person.TweetText}}</div>
-            <div class="col-sm-3"><a href="https://twitter.com/statuses/{{person.TweetId}}" target="_blank">@{{person.TweetedBy}}</a></div>
+        <div class="row" ng-repeat="tweet in tweets">
+            <div class="col-sm-3"><a href="https://twitter.com/statuses/{{tweet.TweetId}}" target="_blank"></a>{{tweet.TweetText}}</a></div>
+            <div class="col-sm-3"><a href="{{tweet.LinkInTweet}}" target="_blank">Link</a></div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="checkbox">
@@ -32,7 +32,7 @@
                             <div class="col-md-4">Location</div>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="{{person.details.location}}" onclick="copyTextToClipboard(this.value);"
+                                    <input type="text" class="form-control" value="{{tweet.details.location}}" onclick="copyTextToClipboard(this.value);"
                                         readonly>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@
                             <div class="col-md-4">Full Name</div>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="{{person.details.name}}" onclick="copyTextToClipboard(this.value);"
+                                    <input type="text" class="form-control" value="{{tweet.details.name}}" onclick="copyTextToClipboard(this.value);"
                                         readonly>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                             <div class="col-md-4">Age</div>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="{{person.details.age}}" onclick="copyTextToClipboard(this.value);"
+                                    <input type="text" class="form-control" value="{{tweet.details.age}}" onclick="copyTextToClipboard(this.value);"
                                         readonly>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@
                             <div class="col-md-4">Height</div>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="{{person.details.height}}" onclick="copyTextToClipboard(this.value);"
+                                    <input type="text" class="form-control" value="{{tweet.details.height}}" onclick="copyTextToClipboard(this.value);"
                                         readonly>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                             <div class="col-md-4">Weight</div>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="{{person.details.weight}}" onclick="copyTextToClipboard(this.value);"
+                                    <input type="text" class="form-control" value="{{tweet.details.weight}}" onclick="copyTextToClipboard(this.value);"
                                         readonly>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                             <div class="col-md-4">Hair Color/Length</div>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="{{person.details.attri}}" onclick="copyTextToClipboard(this.value);"
+                                    <input type="text" class="form-control" value="{{tweet.details.attri}}" onclick="copyTextToClipboard(this.value);"
                                         readonly>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                             <div class="col-md-4">Sex</div>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="{{person.details.sex}}" onclick="copyTextToClipboard(this.value);"
+                                    <input type="text" class="form-control" value="{{tweet.details.sex}}" onclick="copyTextToClipboard(this.value);"
                                         readonly>
                                 </div>
                             </div>
