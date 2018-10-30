@@ -18,10 +18,9 @@
 <body>
     <div class="container" ng-controller="missing">
         <div class="row" ng-repeat="person in peoples">
-            <div class="col-sm-3">{{person.photo}}</div>
-            <div class="col-sm-3">{{person.name}}</div>
-            <div class="col-sm-3"><a href="{{person.link}}" target="_blank">{{person.id}}</a></div>
-            <row>
+            <div class="col-sm-3">{{person.TweetText}}</div>
+            <div class="col-sm-3"><a href="https://twitter.com/statuses/{{person.TweetId}}" target="_blank">@{{person.TweetedBy}}</a></div>
+            <div class="row">
                 <div class="col-md-4">
                     <div class="checkbox">
                         <label>
@@ -93,9 +92,9 @@
                             </div>
                         </div>
                     </div>
-            </row>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 <script>
