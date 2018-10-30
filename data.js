@@ -1,5 +1,5 @@
 {
-    "people" [
+    "people": [
         {
             "photo": "",
             "name": "Jef King",
