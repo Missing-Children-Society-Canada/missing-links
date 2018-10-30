@@ -18,7 +18,7 @@
 
 <body>
     <div class="container" ng-controller="missing">
-        <div class="row" ng-repeat="tweet in tweets">
+        <div class="row main" ng-repeat="tweet in tweets">
             <div class="col-sm"><a href="https://twitter.com/statuses/{{tweet.TweetId}}" target="_blank">{{tweet.TweetText}}</a></div>
             <div class="col-sm"><a href="{{tweet.LinkInTweet}}" target="_blank">Link</a></div>
             <div class="container">

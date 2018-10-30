@@ -3,9 +3,9 @@ body {
   }
 
   /* For small screen */
-.row :nth-child(even){
+.row .main :nth-child(even){
     background-color: #aaa;
   }
-  .row :nth-child(odd){
+.row .main :nth-child(odd){
     background-color: #f0f5f5;
   }
