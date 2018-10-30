@@ -22,80 +22,69 @@
             <div class="col-sm"><a href="{{tweet.LinkInTweet}}" target="_blank">Link</a></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">Location</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                        value="{{tweet.details.location}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
+                    <div class="col-md">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Location</span>
                             </div>
-                            <div class="col-md">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">Age</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                        value="{{tweet.details.age}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
-                            </div>
-                            <div class="col-md">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">Name</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                        value="{{tweet.details.name}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
-                            </div>
-                            <div class="col-md">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">Height</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                        value="{{tweet.details.height}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
-                            </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                                value="{{tweet.details.location}}" onclick="copyTextToClipboard(this.value);" readonly>
                         </div>
-                        <div class="row">
-                            <div class="col-md">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">Weight</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                        value="{{tweet.details.weight}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Age</span>
                             </div>
-                            <div class="col-md">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">Hair Color/Length</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                        value="{{tweet.details.attri}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                                value="{{tweet.details.age}}" onclick="copyTextToClipboard(this.value);" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Name</span>
                             </div>
-                            <div class="col-md">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">Sex</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                        value="{{tweet.details.sex}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                                value="{{tweet.details.name}}" onclick="copyTextToClipboard(this.value);" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Height</span>
                             </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                                value="{{tweet.details.height}}" onclick="copyTextToClipboard(this.value);" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Weight</span>
+                            </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                                value="{{tweet.details.weight}}" onclick="copyTextToClipboard(this.value);" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Hair Color/Length</span>
+                            </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                                value="{{tweet.details.attri}}" onclick="copyTextToClipboard(this.value);" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">Sex</span>
+                            </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                                value="{{tweet.details.sex}}" onclick="copyTextToClipboard(this.value);" readonly>
                         </div>
                     </div>
                 </div>
