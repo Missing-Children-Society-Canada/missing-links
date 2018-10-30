@@ -7,7 +7,7 @@ missingApp.controller('missing', ['$scope', '$http', function ($scope, $http) {
         $scope.tweets = data.data;
 
         angular.forEach(data.data, function (person) {
-            // $http.post('https://unkown.com/api/endpoint', { "uri": person.link }).then(function (details) {
+            // $http.post('https://unkown.com/api/endpoint', { "link": person.link }).then(function (details) {
             //     person.details = details;
             // });
         });
