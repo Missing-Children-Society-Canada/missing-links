@@ -18,76 +18,77 @@
 <body>
     <div class="container" ng-controller="missing">
         <div class="row" ng-repeat="person in peoples">
-            <div class="col-md-4">{{person.photo}}</div>
-            <div class="col-md-4">{{person.name}}</div>
-            <div class="col-md-4">{{person.link}}</div>
-            <div class="col-md-4">
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" ng-model="person.selected" value="person.selected">Form
-                    </label>
-                </div>
-                <div id="copy-form" ng-show="person.selected">
-                    <div class="row">
-                        <div class="col-md-4">Location</div>
-                        <div class="col-md-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control" value="{{person.details.location}}" onclick="copyTextToClipboard(this.value);"
-                                    readonly>
+            <div class="col-sm-3">{{person.TweetText}}</div>
+            <div class="col-sm-3"><a href="https://twitter.com/statuses/{{person.TweetId}}" target="_blank">@{{person.TweetedBy}}</a></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" ng-model="person.selected" value="person.selected">Form
+                        </label>
+                    </div>
+                    <div id="copy-form" ng-show="person.selected">
+                        <div class="row">
+                            <div class="col-md-4">Location</div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="{{person.details.location}}" onclick="copyTextToClipboard(this.value);"
+                                        readonly>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">Full Name</div>
-                        <div class="col-md-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control" value="{{person.details.name}}" onclick="copyTextToClipboard(this.value);"
-                                    readonly>
+                        <div class="row">
+                            <div class="col-md-4">Full Name</div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="{{person.details.name}}" onclick="copyTextToClipboard(this.value);"
+                                        readonly>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">Age</div>
-                        <div class="col-md-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control" value="{{person.details.age}}" onclick="copyTextToClipboard(this.value);"
-                                    readonly>
+                        <div class="row">
+                            <div class="col-md-4">Age</div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="{{person.details.age}}" onclick="copyTextToClipboard(this.value);"
+                                        readonly>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">Height</div>
-                        <div class="col-md-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control" value="{{person.details.height}}" onclick="copyTextToClipboard(this.value);"
-                                    readonly>
+                        <div class="row">
+                            <div class="col-md-4">Height</div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="{{person.details.height}}" onclick="copyTextToClipboard(this.value);"
+                                        readonly>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">Weight</div>
-                        <div class="col-md-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control" value="{{person.details.weight}}" onclick="copyTextToClipboard(this.value);"
-                                    readonly>
+                        <div class="row">
+                            <div class="col-md-4">Weight</div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="{{person.details.weight}}" onclick="copyTextToClipboard(this.value);"
+                                        readonly>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">Hair Color/Length</div>
-                        <div class="col-md-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control" value="{{person.details.attri}}" onclick="copyTextToClipboard(this.value);"
-                                    readonly>
+                        <div class="row">
+                            <div class="col-md-4">Hair Color/Length</div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="{{person.details.attri}}" onclick="copyTextToClipboard(this.value);"
+                                        readonly>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">Sex</div>
-                        <div class="col-md-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control" value="{{person.details.sex}}" onclick="copyTextToClipboard(this.value);"
-                                    readonly>
+                        <div class="row">
+                            <div class="col-md-4">Sex</div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="{{person.details.sex}}" onclick="copyTextToClipboard(this.value);"
+                                        readonly>
+                                </div>
                             </div>
                         </div>
                     </div>
