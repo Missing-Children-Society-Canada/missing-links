@@ -9,6 +9,6 @@ missingApp.controller('missing', ['$scope', '$http', function ($scope, $http) {
         console.log($scope.peoples);
         angular.forEach($scope.peoples, function (person) {
             console.log(person.name);
-        };
+        });
     });
 }]);
