@@ -22,9 +22,132 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        LINKS
+    <div class="container">
+        <!-- <h3>Three equal columns</h3>
+    <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile
+        devices, tablets and below, the columns will automatically stack.</p> -->
+        <div class="row">
+            <div class="col-md-4">Photo</div>
+            <div class="col-md-4">Name</div>
+            <div class="col-md-4">Link</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">Photo</div>
+            <div class="col-md-4">Name</div>
+            <div class="col-md-4">Link</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">Photo</div>
+            <div class="col-md-4">Name</div>
+            <div class="col-md-4">Link</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">Photo</div>
+            <div class="col-md-4">Name</div>
+            <div class="col-md-4">Link</div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-md-4">Location</div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" value="" onclick="copyTextToClipboard(this.value);"
+                            readonly>
+                        <span class="form-text text-muted">Click to copy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">Full Name</div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="" onclick="copyTextToClipboard(this.value);"
+                        readonly>
+                    <span class="form-text text-muted">Click to copy</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">Age</div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="" onclick="copyTextToClipboard(this.value);"
+                        readonly>
+                    <span class="form-text text-muted">Click to copy</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">Height</div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="" onclick="copyTextToClipboard(this.value);"
+                        readonly>
+                    <span class="form-text text-muted">Click to copy</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">Wieght</div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="" onclick="copyTextToClipboard(this.value);"
+                        readonly>
+                    <span class="form-text text-muted">Click to copy</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">Hair Color/Length</div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="" onclick="copyTextToClipboard(this.value);"
+                        readonly>
+                    <span class="form-text text-muted">Click to copy</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">Sex</div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="" onclick="copyTextToClipboard(this.value);"
+                        readonly>
+                    <span class="form-text text-muted">Click to copy</span>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
+<script>
+    function fallbackCopyTextToClipboard(text) {
+        var textArea = document.createElement("textarea");
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'successful' : 'unsuccessful';
+            console.log('Fallback: Copying text command was ' + msg);
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+        }
+
+        document.body.removeChild(textArea);
+    }
+    function copyTextToClipboard(text) {
+        if (!navigator.clipboard) {
+            fallbackCopyTextToClipboard(text);
+            return;
+        }
+        navigator.clipboard.writeText(text).then(function () {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+    }
+</script>
 
 </html>
