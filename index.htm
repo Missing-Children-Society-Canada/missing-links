@@ -18,15 +18,10 @@
 <body>
     <div class="container" ng-controller="missing">
         <div class="row" ng-repeat="tweet in tweets">
-            <div class="col-sm-3"><a href="https://twitter.com/statuses/{{tweet.TweetId}}" target="_blank">{{tweet.TweetText}}</a></div>
-            <div class="col-sm-3"><a href="{{tweet.LinkInTweet}}" target="_blank">Link</a></div>
-            <div class="col-md-4">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <input type="checkbox" ng-model="person.selected" value="person.selected" aria-label="Form">
-                        </div>
-                    </div>
+            <div class="col-sm-2"><a href="https://twitter.com/statuses/{{tweet.TweetId}}" target="_blank">{{tweet.TweetText}}</a></div>
+            <div class="col-sm-2"><a href="{{tweet.LinkInTweet}}" target="_blank">Link</a></div>
+            <div class="row">
+                <div class="col-md-4">
                     <div id="copy-form" ng-show="person.selected">
                         <div class="row">
                             <div class="col-md-4">Location</div>
@@ -36,8 +31,6 @@
                                         readonly>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-4">Full Name</div>
                             <div class="col-md-4">
                                 <div class="input-group">
@@ -45,8 +38,6 @@
                                         readonly>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-4">Age</div>
                             <div class="col-md-4">
                                 <div class="input-group">
@@ -54,8 +45,6 @@
                                         readonly>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-4">Height</div>
                             <div class="col-md-4">
                                 <div class="input-group">
@@ -72,8 +61,6 @@
                                         readonly>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-4">Hair Color/Length</div>
                             <div class="col-md-4">
                                 <div class="input-group">
@@ -81,13 +68,12 @@
                                         readonly>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">Sex</div>
                             <div class="col-md-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="{{tweet.details.sex}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon3">Sex</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"  value="{{tweet.details.sex}}" onclick="copyTextToClipboard(this.value);" readonly>
                                 </div>
                             </div>
                         </div>
