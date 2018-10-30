@@ -4,7 +4,7 @@ body {
 
   /* For small screen */
 .main :nth-child(even){
-    background-color: #aaa;
+    background-color: #fff;
   }
 .main :nth-child(odd){
     background-color: #f0f5f5;
