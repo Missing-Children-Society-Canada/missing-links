@@ -22,59 +22,58 @@
             <div class="col-sm-2"><a href="{{tweet.LinkInTweet}}" target="_blank">Link</a></div>
             <div class="row">
                 <div class="col-md-4">
-                    <div id="copy-form" ng-show="person.selected">
-                        <div class="row">
-                            <div class="col-md-4">Location</div>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="{{tweet.details.location}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
-                            </div>
-                            <div class="col-md-4">Full Name</div>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="{{tweet.details.name}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
-                            </div>
-                            <div class="col-md-4">Age</div>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="{{tweet.details.age}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
-                            </div>
-                            <div class="col-md-4">Height</div>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="{{tweet.details.height}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-4">Location</div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="{{tweet.details.location}}" onclick="copyTextToClipboard(this.value);"
+                                    readonly>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">Weight</div>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="{{tweet.details.weight}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
+                        <div class="col-md-4">Full Name</div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="{{tweet.details.name}}" onclick="copyTextToClipboard(this.value);"
+                                    readonly>
                             </div>
-                            <div class="col-md-4">Hair Color/Length</div>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="{{tweet.details.attri}}" onclick="copyTextToClipboard(this.value);"
-                                        readonly>
-                                </div>
+                        </div>
+                        <div class="col-md-4">Age</div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="{{tweet.details.age}}" onclick="copyTextToClipboard(this.value);"
+                                    readonly>
                             </div>
-                            <div class="col-md-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">Sex</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"  value="{{tweet.details.sex}}" onclick="copyTextToClipboard(this.value);" readonly>
+                        </div>
+                        <div class="col-md-4">Height</div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="{{tweet.details.height}}" onclick="copyTextToClipboard(this.value);"
+                                    readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">Weight</div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="{{tweet.details.weight}}" onclick="copyTextToClipboard(this.value);"
+                                    readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-4">Hair Color/Length</div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="{{tweet.details.attri}}" onclick="copyTextToClipboard(this.value);"
+                                    readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon3">Sex</span>
                                 </div>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                                    value="{{tweet.details.sex}}" onclick="copyTextToClipboard(this.value);" readonly>
                             </div>
                         </div>
                     </div>
